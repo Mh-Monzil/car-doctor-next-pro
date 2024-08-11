@@ -29,8 +29,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-white text-black">
-      <div className="navbar container mx-auto">
+    <div className="bg-white text-black p-3">
+      <div className="navbar max-w-[1440px] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -79,11 +79,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end flex items-center gap-3">
-          <RiShoppingBag4Line className="text-xl" />
-          <IoSearchOutline className="text-xl" />
-          <a className="py-2 px-4 border-2 border-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300 ease-in-out cursor-pointer">
+          <RiShoppingBag4Line className="text-xl cursor-pointer" />
+          <IoSearchOutline className="text-xl cursor-pointer" />
+          <Link href="/" className="font-semibold py-2 px-4 border-2 border-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300 ease-in-out cursor-pointer">
             Appointment
-          </a>
+          </Link>
         </div>
       </div>
     </div>
