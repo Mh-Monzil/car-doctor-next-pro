@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { RiShoppingBag4Line } from "react-icons/ri";
+import { IoSearchOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const navItems = [
@@ -66,14 +68,22 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <div className="flex items-center space-x-6">
             {navItems.map((nav) => (
-              <Link key={nav.path} href={nav.path} className="font-semibold hover:text-primary transition-all duration-300 ease-in-out">
+              <Link
+                key={nav.path}
+                href={nav.path}
+                className="font-semibold hover:text-primary transition-all duration-300 ease-in-out"
+              >
                 {nav.title}
               </Link>
             ))}
           </div>
         </div>
-        <div className="navbar-end">
-          <a className="py-2 px-4 border-2 border-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300 ease-in-out cursor-pointer">Button</a>
+        <div className="navbar-end flex items-center gap-3">
+          <RiShoppingBag4Line className="text-xl" />
+          <IoSearchOutline className="text-xl" />
+          <a className="py-2 px-4 border-2 border-primary rounded-md hover:bg-primary hover:text-white transition-all duration-300 ease-in-out cursor-pointer">
+            Appointment
+          </a>
         </div>
       </div>
     </div>
