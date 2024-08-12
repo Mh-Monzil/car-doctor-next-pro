@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-white text-black p-3">
+    <div className="bg-white text-black p-4">
       <div className="navbar max-w-[1440px] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
